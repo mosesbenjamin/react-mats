@@ -30,7 +30,7 @@ const ReactToastify = () => {
             position: toast.POSITION.TOP_RIGHT,
             autoClose: false
         })
-        toast.warn(<CustomToast />, {position: toast.POSITION.BOTTOM_LEFT})
+        toast.warn(<CustomToast />, {position: toast.POSITION.BOTTOM_LEFT}) //Custom component
         toast.error("Basic notification", {position: toast.POSITION.BOTTOM_CENTER})
         toast("Basic notification", {position: toast.POSITION.BOTTOM_RIGHT})
     }
