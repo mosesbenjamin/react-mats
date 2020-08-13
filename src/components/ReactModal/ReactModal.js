@@ -26,18 +26,21 @@ const ReactModal = () => {
                     content: {
                         color: 'rgba(0,0,0)', 
                         width: '40%',
-                        height: '40vh',
+                        height: '40%',
                         margin: 'auto',
-                        overflow: 'hidden'
+                        overflow: 'hidden',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        textAlign: 'center'
                     }
                 }
             }
             > 
-            <div className="text-center">
                 <h6>Modal Title</h6>
                 <p>Modal Body</p>
                 <button className="btn btn-primary" onClick={()=> setModalIsOpen(false)}>Close</button>
-            </div>
             </Modal>
         </div>
         </>

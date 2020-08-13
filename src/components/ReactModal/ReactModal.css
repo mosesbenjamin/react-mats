@@ -6,3 +6,12 @@
     text-align: center;
     margin-top: 2em;
 }
+
+.modal__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: red;
+}
