@@ -21,16 +21,23 @@ const ReactModal = () => {
                     overlay: {
                         background: 'grey',
                         opacity: '0.9'
+                       
                     },
                     content: {
-                        color: 'green'
+                        color: 'rgba(0,0,0)', 
+                        width: '40%',
+                        height: '40vh',
+                        margin: 'auto',
+                        overflow: 'hidden'
                     }
                 }
             }
             > 
+            <div className="text-center">
                 <h6>Modal Title</h6>
                 <p>Modal Body</p>
                 <button className="btn btn-primary" onClick={()=> setModalIsOpen(false)}>Close</button>
+            </div>
             </Modal>
         </div>
         </>
